@@ -5,6 +5,12 @@ export default {
     extend: {
       backgroundImage: {
         ButtonArrow: "url('./src/assets/ButtonArrow.svg')",
+        CarouselRight: "url('./src/assets/CarouselRight.svg')",
+        CarouselLeft: "url('./src/assets/CarouselLeft.svg')",
+      },
+      fontFamily: {
+        DMSans: ["DM Sans, sans-serif"],
+        Poppins: ["Poppins, sans-serif"],
       },
     },
   },

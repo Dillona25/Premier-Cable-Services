@@ -8,7 +8,7 @@ export default {
 export const ButtonStory = () => {
   return (
     <div className="flex flex-col gap-5">
-      <Button variant="primary">Contact us</Button>
+      <Button variant="primary">Contact Us</Button>
       <Button variant="secondary">More About Us</Button>
     </div>
   );
