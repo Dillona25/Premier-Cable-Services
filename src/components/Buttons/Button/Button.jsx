@@ -1,6 +1,6 @@
 export const Button = ({ variant, children, className }) => {
   const buttonClasses = {
-    base: `font-DMSans py-4 px-6 rounded-[30px] w-fit flex items-center hover:scale-[1.05] ease-in-out duration-[0.5s] ${className}`,
+    base: `font-DMSans py-4 px-6 rounded-[30px] text-[18px] w-fit flex items-center hover:scale-[1.05] ease-in-out duration-[0.5s] ${className}`,
     primary: "bg-[#98C1FF] text-white",
     secondary: "bg-white border-[1px] border-[#757575] text-black",
   };

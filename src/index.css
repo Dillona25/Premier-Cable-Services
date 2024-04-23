@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-[75px];
+    @apply leading-[70px];
+    @apply text-white;
+    @apply font-Poppins;
+    @apply font-bold;
+  }
+
+  span {
+    @apply text-[75px];
+    @apply leading-[70px];
+    @apply text-[#98C1FF];
+    @apply font-Poppins;
+    @apply font-bold;
+  }
+
+  p {
+    @apply font-DMSans;
+    @apply text-[18px];
+    @apply text-white;
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 900;
+    src: url("./fonts/Poppins-Bold.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./fonts/DMSans-Regular.ttf") format("truetype");
+  }
+}

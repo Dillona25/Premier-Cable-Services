@@ -4,6 +4,8 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
+        Hero: "url('./src/images/Hero.png')",
+        Menu: "url('./src/assets/Menu.svg')",
         ButtonArrow: "url('./src/assets/ButtonArrow.svg')",
         CarouselRight: "url('./src/assets/CarouselRight.svg')",
         CarouselLeft: "url('./src/assets/CarouselLeft.svg')",
@@ -11,6 +13,13 @@ export default {
       fontFamily: {
         DMSans: ["DM Sans, sans-serif"],
         Poppins: ["Poppins, sans-serif"],
+      },
+      screens: {
+        xs: { min: "400px", max: "500px" },
+        sm: { min: "501px", max: "1169px" },
+        md: { min: "1170px", max: "1304px" },
+        lg: { min: "1305px", max: "1440px" },
+        xl: { min: "1441px" },
       },
     },
   },
