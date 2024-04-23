@@ -6,9 +6,11 @@ export default {
       backgroundImage: {
         Hero: "url('./src/images/Hero.png')",
         Menu: "url('./src/assets/Menu.svg')",
+        closeMenu: "url('./src/assets/CloseMenu.svg')",
         ButtonArrow: "url('./src/assets/ButtonArrow.svg')",
         CarouselRight: "url('./src/assets/CarouselRight.svg')",
         CarouselLeft: "url('./src/assets/CarouselLeft.svg')",
+        LinkedIn: "url('./src/assets/LinkedIn.svg')",
       },
       fontFamily: {
         DMSans: ["DM Sans, sans-serif"],
