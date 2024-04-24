@@ -1,10 +1,25 @@
 import PCSLogo from "../../images/PCSLogo.png";
+import { NavButton } from "../Navbar/NavButton";
+import { motion, AnimatePresence } from "framer-motion";
 
 export const MobileNavbar = ({ closeModal }) => {
+  const navButtons = [
+    { text: "Our Services", className: "border-t" },
+    { text: "Client Reviews" },
+    { text: "Portfolio" },
+    { text: "Contact" },
+    { text: "About us" },
+  ];
+
   return (
     <>
       <div className="fixed inset-0 bg-black bg-opacity-5 backdrop-filter backdrop-blur-md"></div>
-      <div className="bg-white w-[250px] z-50 h-screen absolute left-0">
+      <motion.div
+        initial={{ x: -250 }}
+        animate={{ x: 0 }}
+        exit={{ opacity: 0 }}
+        className="bg-white w-[250px] z-50 h-screen absolute left-0"
+      >
         <button
           onClick={closeModal}
           className="bg-closeMenu h-[38px] w-[38px] mx-3 mt-5"
@@ -12,11 +27,13 @@ export const MobileNavbar = ({ closeModal }) => {
         <div className="flex flex-col">
           <img alt="PCS Logo" src={PCSLogo} />
           <ul className="font-Poppins font-bold">
-            <NavButton text="Our Services" className="border-t" />
-            <NavButton text="Client Reviews" />
-            <NavButton text="Portfolio" />
-            <NavButton text="Contact" />
-            <NavButton text="About us" />
+            {navButtons.map((button, index) => (
+              <NavButton
+                key={index}
+                text={button.text}
+                className={button.className}
+              />
+            ))}
           </ul>
           <div className="flex flex-col absolute bottom-10 px-3">
             <p className="text-[14px] text-[#757575]">William Arnold</p>
@@ -25,17 +42,7 @@ export const MobileNavbar = ({ closeModal }) => {
             <button className="bg-LinkedIn h-[48px] w-[48px] mt-2 ml-[-5px]"></button>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
-  );
-};
-
-const NavButton = ({ text, className }) => {
-  return (
-    <button
-      className={`text-[24px] text-[#757575] py-3 border-[#757575] text-left pl-3 border-b w-full ${className}`}
-    >
-      {text}
-    </button>
   );
 };
