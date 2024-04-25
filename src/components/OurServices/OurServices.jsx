@@ -1,3 +1,5 @@
+import { ServicesCarousel } from "../ServicesCarousel/ServicesCarousel";
+
 export const OurServices = () => {
   return (
     <section className="bg-[#f4f4f4] flex flex-col gap-7">
@@ -9,6 +11,7 @@ export const OurServices = () => {
         We offer a range of tailored fiberoptic services at a very competitive
         price point
       </p>
+      <ServicesCarousel />
     </section>
   );
 };

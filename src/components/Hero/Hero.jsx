@@ -1,4 +1,4 @@
-import { Button } from "../Buttons/Button/Button";
+import { Button } from "../Button/Button";
 
 export const Hero = () => {
   return (

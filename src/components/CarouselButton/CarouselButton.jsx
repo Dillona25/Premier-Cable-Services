@@ -1,4 +1,4 @@
-export const CarouselButton = ({ variant }) => {
+export const CarouselButton = ({ variant, onClick }) => {
   let buttonClass = "flex items-center justify-center h-16 w-16 rounded-full";
   let arrowClass = "w-7 h-7";
 
@@ -11,7 +11,7 @@ export const CarouselButton = ({ variant }) => {
   }
 
   return (
-    <button className={buttonClass}>
+    <button onClick={onClick} className={buttonClass}>
       <div className={arrowClass}></div>
     </button>
   );
