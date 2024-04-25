@@ -16,7 +16,7 @@ function App() {
   };
 
   return (
-    <>
+    <div className="bg-[#f4f4f4]">
       <div className="relative bg-Hero bg-cover bg-center h-screen">
         <div className="absolute inset-0 flex flex-col">
           <Navbar handleSideBarMenu={handleSideBarMenu} />
@@ -31,7 +31,7 @@ function App() {
         </div>
       </div>
       <OurServices />
-    </>
+    </div>
   );
 }
 

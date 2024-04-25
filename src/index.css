@@ -4,7 +4,8 @@
 
 @layer base {
   section {
-    @apply px-5;
+    @apply w-[360px];
+    @apply m-auto;
     @apply py-[50px];
   }
 
