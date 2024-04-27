@@ -67,7 +67,7 @@ export const ServicesCarousel = () => {
             className="rounded-[20px] h-[240px] w-full"
           />
           <h1 className="text-[26px] text-center">{currentService.title}</h1>
-          <p className="text-center text-[16px] line-clamp-5">
+          <p className="text-center line-clamp-5">
             {currentService.description}
           </p>
         </div>

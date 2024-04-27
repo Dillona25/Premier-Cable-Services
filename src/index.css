@@ -4,8 +4,7 @@
 
 @layer base {
   section {
-    @apply w-[360px];
-    @apply m-auto;
+    @apply px-5;
     @apply py-[50px];
   }
 
@@ -17,6 +16,22 @@
     @apply font-bold;
   }
 
+  /* h2 {
+    @apply text-[18px];
+    @apply text-[#757575];
+    @apply font-Poppins;
+    @apply font-bold;
+    @apply text-center;
+  }
+
+  h3 {
+    @apply text-[18px];
+    @apply text-[#757575];
+    @apply font-Poppins;
+    @apply font-bold;
+    @apply text-center;
+  } */
+
   span {
     @apply text-[50px];
     @apply leading-[70px];
@@ -27,7 +42,7 @@
 
   p {
     @apply font-DMSans;
-    @apply text-[18px];
+    @apply text-[16px];
     @apply text-[#757575];
   }
 
