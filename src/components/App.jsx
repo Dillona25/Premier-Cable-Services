@@ -4,6 +4,7 @@ import { Navbar } from "./Navbar/Navbar";
 import { useState } from "react";
 import { OurServices } from "./OurServices/OurServices";
 import { ActionCall } from "./ActionCall/ActionCall";
+import { Reviews } from "./Reviews/Reviews";
 
 function App() {
   const [activeModal, setActiveModal] = useState("");
@@ -32,7 +33,8 @@ function App() {
         </div>
       </div>
       <OurServices />
-      <ActionCall />
+      <Reviews />
+      {/* <ActionCall /> */}
     </div>
   );
 }
