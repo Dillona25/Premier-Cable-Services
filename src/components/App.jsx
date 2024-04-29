@@ -5,6 +5,7 @@ import { useState } from "react";
 import { OurServices } from "./OurServices/OurServices";
 import { ActionCall } from "./ActionCall/ActionCall";
 import { Reviews } from "./Reviews/Reviews";
+import { Footer } from "./Footer/Footer";
 
 function App() {
   const [activeModal, setActiveModal] = useState("");
@@ -35,6 +36,7 @@ function App() {
       <OurServices />
       <Reviews />
       <ActionCall />
+      <Footer />
     </div>
   );
 }

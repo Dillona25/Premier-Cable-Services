@@ -8,6 +8,11 @@
     @apply py-[50px];
   }
 
+  footer {
+    @apply px-5;
+    @apply py-[50px];
+  }
+
   h1 {
     @apply text-[50px];
     @apply leading-[70px];
