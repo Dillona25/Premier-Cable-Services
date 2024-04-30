@@ -1,10 +1,10 @@
 export const Navbar = ({ handleSideBarMenu }) => {
   return (
-    <div className="flex items-center px-3 pt-5 gap-2">
+    <section className="flex items-center gap-2 pt-6 pb-0 absolute">
       <button
         onClick={handleSideBarMenu}
         className="bg-Menu h-[38px] w-[38px]"
       ></button>
-    </div>
+    </section>
   );
 };

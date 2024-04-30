@@ -10,7 +10,7 @@ export const FormTextArea = ({
       <textarea
         placeholder={placeholder}
         onChange={onChange}
-        className={`w-fit rounded-[10px] font-DMSans text-[16px] py-3 px-4 border-[1px] border-[#757575] ${className}`}
+        className={`w-full h-[100px] rounded-[10px] font-DMSans text-[16px] py-3 px-4 border-[1px] border-[#757575] ${className}`}
       ></textarea>
     </div>
   );
