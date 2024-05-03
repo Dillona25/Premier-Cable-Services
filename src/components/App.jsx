@@ -1,7 +1,7 @@
 import { Hero } from "./Hero/Hero";
 import { MobileNavbar } from "../components/MobileNavbar/MobileNavbar";
 import { Navbar } from "./Navbar/Navbar";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { OurServices } from "./OurServices/OurServices";
 import { ActionCall } from "./ActionCall/ActionCall";
 import { Reviews } from "./Reviews/Reviews";
@@ -9,6 +9,7 @@ import { Footer } from "./Footer/Footer";
 import { BrowserRouter as ReactRouter, Routes, Route } from "react-router-dom";
 import { Contact } from "../routes/Contact";
 import { About } from "../routes/About";
+import { UndergroundServices } from "./UndergroundServices/UndergroundServices";
 
 function App() {
   const [activeModal, setActiveModal] = useState("");
@@ -42,6 +43,7 @@ function App() {
                 </div>
               </div>
               <OurServices />
+              <UndergroundServices />
               <Reviews />
               <ActionCall />
               <Footer />

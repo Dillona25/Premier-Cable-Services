@@ -1,5 +1,6 @@
 import CheckMark from "../../assets/CheckMark.svg";
 import { Button } from "../Button/Button";
+import { Link } from "react-router-dom";
 
 export const ActionCall = () => {
   return (
@@ -32,8 +33,12 @@ export const ActionCall = () => {
           <p>Young competetive pricing</p>
         </div>
         <div className="flex gap-4 mt-6">
-          <Button variant="primary">Contact Us</Button>
-          <Button variant="secondary">More About Us</Button>
+          <Link to="/Contact">
+            <Button variant="primary">Contact Us</Button>
+          </Link>
+          <Link to="/About">
+            <Button variant="secondary">More About Us</Button>
+          </Link>
         </div>
       </div>
     </section>

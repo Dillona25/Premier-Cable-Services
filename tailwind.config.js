@@ -5,6 +5,7 @@ export default {
     extend: {
       backgroundImage: {
         Hero: "url('./src/images/Hero.png')",
+        Cencon: "url('./src/images/Cencon.png')",
         Contact: "url('./src/images/ContactImage.png')",
         Menu: "url('./src/assets/Menu.svg')",
         closeMenu: "url('./src/assets/CloseMenu.svg')",
