@@ -16,7 +16,9 @@ export const MobileNavbar = ({ closeModal }) => {
   ];
 
   const showHomeButton =
-    location.pathname === "/Contact" || location.pathname === "/About";
+    location.pathname === "/Contact" ||
+    location.pathname === "/About" ||
+    location.pathname === "/Careers";
 
   return (
     <>

@@ -8,6 +8,7 @@ export default {
         Cencon: "url('./src/images/Cencon.png')",
         Contact: "url('./src/images/ContactImage.png')",
         Menu: "url('./src/assets/Menu.svg')",
+        MenuBlack: "url('./src/assets/MenuBlack.svg')",
         closeMenu: "url('./src/assets/CloseMenu.svg')",
         ButtonArrow: "url('./src/assets/ButtonArrow.svg')",
         CarouselRight: "url('./src/assets/CarouselRight.svg')",

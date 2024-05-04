@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const Footer = () => {
   return (
     <footer className="bg-white">
@@ -8,7 +10,9 @@ export const Footer = () => {
           <p>Portfolio</p>
           <p>Contact</p>
           <p>About Us</p>
-          <p>Careers</p>
+          <Link to="/Careers" className="text-[#757575]">
+            Careers
+          </Link>
         </div>
       </div>
       <div className="text-center pt-5">

@@ -10,6 +10,7 @@ import { BrowserRouter as ReactRouter, Routes, Route } from "react-router-dom";
 import { Contact } from "../routes/Contact";
 import { About } from "../routes/About";
 import { UndergroundServices } from "./UndergroundServices/UndergroundServices";
+import { Careers } from "../routes/Careers";
 
 function App() {
   const [activeModal, setActiveModal] = useState("");
@@ -44,8 +45,8 @@ function App() {
               </div>
               <OurServices />
               <UndergroundServices />
-              <Reviews />
               <ActionCall />
+              <Reviews />
               <Footer />
             </div>
           }
@@ -73,6 +74,19 @@ function App() {
                 <MobileNavbar closeModal={closeModal} />
               )}
               <About />
+              {/* <Footer /> */}
+            </>
+          }
+        />
+        <Route
+          path="/Careers"
+          element={
+            <>
+              <Navbar handleSideBarMenu={handleSideBarMenu} />
+              {activeModal === "SideBarMenu" && (
+                <MobileNavbar closeModal={closeModal} />
+              )}
+              <Careers />
               {/* <Footer /> */}
             </>
           }
