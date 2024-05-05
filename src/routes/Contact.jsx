@@ -12,8 +12,9 @@ export const Contact = () => {
       <div className="flex flex-col gap-2 mt-[50px]">
         <h1 className="text-white">Talk to us</h1>
         <p className="text-white">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar
-          elementum tempus hac tellus libero accumsan.{" "}
+          Looking for more information onj our services? Looking for a career?
+          Fill out the formn below with an appropriate message and we wil get
+          back to you!{" "}
         </p>
       </div>
       <div className="bg-[#f7f7f7] w-[350px] m-auto h-fit shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-[20px]">

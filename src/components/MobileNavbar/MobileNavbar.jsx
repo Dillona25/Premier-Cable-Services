@@ -10,9 +10,9 @@ export const MobileNavbar = ({ closeModal }) => {
   const navButtons = [
     { text: "Our Services", className: "border-t" },
     { text: "Client Reviews" },
-    { text: "Portfolio" },
     { text: "Contact", to: "/Contact" },
     { text: "About us", to: "/About" },
+    { text: "Careers", to: "/Careers" },
   ];
 
   const showHomeButton =

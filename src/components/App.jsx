@@ -87,7 +87,7 @@ function App() {
                 <MobileNavbar closeModal={closeModal} />
               )}
               <Careers />
-              {/* <Footer /> */}
+              <Footer />
             </>
           }
         />

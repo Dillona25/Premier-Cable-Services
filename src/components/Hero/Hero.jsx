@@ -18,7 +18,7 @@ export const Hero = () => {
           <Button variant="primary">Contact Us</Button>
         </Link>
         <Link to="/About">
-          <Button variant="secondary">More About Us</Button>
+          <Button variant="secondary">Our Services</Button>
         </Link>
       </div>
     </section>

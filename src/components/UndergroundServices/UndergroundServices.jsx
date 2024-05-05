@@ -1,5 +1,6 @@
 import CenconLogo from "../../assets/CenconLogo.svg";
 import { Button } from "../Button/Button";
+import { Link } from "react-router-dom";
 
 export const UndergroundServices = () => {
   return (
@@ -22,9 +23,11 @@ export const UndergroundServices = () => {
           the industry we are providing impactful fiberoptic, and construction
           solutions in all of the midwest
         </p>
-        <Button variant="secondary" className="m-auto">
-          Learn more
-        </Button>
+        <Link to="/Contact">
+          <Button variant="secondary" className="m-auto">
+            Learn more
+          </Button>
+        </Link>
       </div>
     </>
   );
