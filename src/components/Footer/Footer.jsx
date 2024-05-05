@@ -8,7 +8,9 @@ export const Footer = () => {
           <p>Services</p>
           <p>Reviews</p>
           <p>Portfolio</p>
-          <p>Contact</p>
+          <Link to="/Careers" className="text-[#757575]">
+            Contact
+          </Link>
           <p>About Us</p>
           <Link to="/Careers" className="text-[#757575]">
             Careers
