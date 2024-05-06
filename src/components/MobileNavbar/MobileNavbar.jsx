@@ -22,7 +22,7 @@ export const MobileNavbar = ({ closeModal }) => {
 
   return (
     <>
-      <div className="fixed inset-0 bg-black bg-opacity-5 backdrop-filter backdrop-blur-md"></div>
+      <div className="fixed inset-0 bg-black bg-opacity-50 z-40"></div>
       <motion.div
         initial={{ x: -250 }}
         animate={{ x: 0 }}
@@ -55,7 +55,11 @@ export const MobileNavbar = ({ closeModal }) => {
             <p className="text-[14px] text-[#757575]">William Arnold</p>
             <p className="text-[14px] text-[#757575]">Owner and Operator</p>
             <p className="text-[14px] text-[#757575]">(402)-750-9933</p>
-            <button className="bg-LinkedIn h-[48px] w-[48px] mt-2 ml-[-5px]"></button>
+            <Link
+              to="https://www.linkedin.com/in/william-arnold-810072293/"
+              target="_blank"
+              className="bg-LinkedIn h-[48px] w-[48px] mt-2 ml-[-5px]"
+            ></Link>
           </div>
         </div>
       </motion.div>

@@ -29,6 +29,14 @@
     @apply text-center;
   }
 
+  h3 {
+    @apply text-[18px];
+    @apply text-[#757575];
+    @apply font-Poppins;
+    @apply font-bold;
+    @apply text-center;
+  }
+
   span {
     @apply text-[50px];
     @apply leading-[70px];

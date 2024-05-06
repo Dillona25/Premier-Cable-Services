@@ -17,9 +17,7 @@ export const Hero = () => {
         <Link to="/Contact">
           <Button variant="primary">Contact Us</Button>
         </Link>
-        <Link to="/About">
-          <Button variant="secondary">Our Services</Button>
-        </Link>
+        <Button variant="secondary">Our Services</Button>
       </div>
     </section>
   );
