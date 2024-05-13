@@ -3,6 +3,7 @@ import { NavButton } from "../Navbar/NavButton";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 export const MobileNavbar = ({ closeModal }) => {
   const location = useLocation();
@@ -20,14 +21,27 @@ export const MobileNavbar = ({ closeModal }) => {
     location.pathname === "/About" ||
     location.pathname === "/Careers";
 
+  useEffect(() => {
+    const body = document.querySelector("body");
+    if (body) {
+      body.style.overflow = "hidden"; // Lock scrolling when navbar is open
+    }
+
+    return () => {
+      if (body) {
+        body.style.overflow = ""; // Unlock scrolling when navbar is closed
+      }
+    };
+  }, [closeModal]);
+
   return (
     <>
-      <div className="fixed inset-0 bg-black bg-opacity-50 z-40"></div>
+      <div className="modal fixed inset-0 bg-black bg-opacity-50 z-40"></div>
       <motion.div
         initial={{ x: -250 }}
         animate={{ x: 0 }}
         exit={{ opacity: 0 }}
-        className="bg-white w-[250px] z-50 h-screen absolute left-0"
+        className="bg-white w-[250px] z-50 h-screen absolute left-0 overflow-y-auto"
       >
         <button
           onClick={closeModal}

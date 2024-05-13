@@ -16,6 +16,7 @@ import { Contact } from "../routes/Contact";
 import { About } from "../routes/About";
 import { UndergroundServices } from "./UndergroundServices/UndergroundServices";
 import { Careers } from "../routes/Careers";
+import { useEscapeKey } from "../hooks/useEscape";
 
 function App() {
   const [activeModal, setActiveModal] = useState(false);
@@ -29,8 +30,15 @@ function App() {
     setActiveModal("");
   };
 
+  // Calling the hook to close modals on escape
+  useEscapeKey(closeModal);
+
   useEffect(() => {
     closeModal(); // Reset modal state when route changes
+  }, [location.pathname]);
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page when route changes
   }, [location.pathname]);
 
   return (

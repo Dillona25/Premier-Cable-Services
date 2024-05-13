@@ -11,7 +11,6 @@ export const Footer = () => {
         <div className="flex flex-wrap justify-center gap-4">
           <p>Services</p>
           <p>Reviews</p>
-          <p>Portfolio</p>
           <Link to="/Contact" className="text-[#757575]">
             Contact
           </Link>
