@@ -51,6 +51,16 @@
     @apply text-[#757575];
   }
 
+  a {
+    @apply font-DMSans;
+    @apply text-[16px];
+    @apply text-[#757575];
+    @apply hover:cursor-pointer;
+    @apply hover:scale-105;
+    @apply hover:ease-in-out;
+    @apply hover:duration-[.5s];
+  }
+
   @font-face {
     font-family: "Poppins";
     font-style: normal;

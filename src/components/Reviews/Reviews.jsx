@@ -5,7 +5,7 @@ import Hamilton from "../../images/Hamilton.jpeg";
 
 export const Reviews = () => {
   return (
-    <section className="bg-white">
+    <section id="reviews" className="bg-white">
       <div className="flex flex-col gap-7">
         <div className="flex flex-col">
           <h1 className="leading-[50px]">Dont just take</h1>
