@@ -22,7 +22,7 @@ import { useMediaQuery } from "react-responsive";
 function App() {
   const [activeModal, setActiveModal] = useState(false);
   const location = useLocation();
-  const isMobile = useMediaQuery({ maxWidth: 767 });
+  const isMobile = useMediaQuery({ maxWidth: 800 });
 
   const handleSideBarMenu = () => {
     setActiveModal("SideBarMenu");
