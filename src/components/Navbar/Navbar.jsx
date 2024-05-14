@@ -16,26 +16,28 @@ export const Navbar = ({ handleSideBarMenu }) => {
           onClick={handleSideBarMenu}
           className={
             location.pathname === "/Careers"
-              ? `bg-MenuBlack h-[38px] w-[38px] xl:hidden`
-              : `bg-Menu h-[38px] w-[38px] xl:hidden`
+              ? `bg-MenuBlack h-[38px] w-[38px] md:hidden`
+              : `bg-Menu h-[38px] w-[38px] md:hidden`
           }
         ></button>
       </section>
-      <nav className="bg-white p-5 px-8">
-        <div className="flex justify-between items-center">
-          <img
-            alt="Premier Cable Logo"
-            src={PCSLogo}
-            className="w-fit h-[40px]"
-          />
-          <div className="flex gap-10">
-            <a className="text-[18px] text-black">Fiberoptic Services</a>
-            <a className="text-[18px] text-black">Construction Services</a>
-            <a className="text-[18px] text-black">Reviews</a>
-            <a className="text-[18px] text-black">Careers</a>
+      <div className="hidden md:block">
+        <nav className="bg-white p-5 px-8">
+          <div className="flex justify-between items-center">
+            <img
+              alt="Premier Cable Logo"
+              src={PCSLogo}
+              className="w-fit h-[40px]"
+            />
+            <div className="flex gap-10">
+              <a className="text-[18px] text-black">Fiberoptic Services</a>
+              <a className="text-[18px] text-black">Construction Services</a>
+              <a className="text-[18px] text-black">Reviews</a>
+              <a className="text-[18px] text-black">Careers</a>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </>
   );
 };

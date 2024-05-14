@@ -17,10 +17,12 @@ import { About } from "../routes/About";
 import { UndergroundServices } from "./UndergroundServices/UndergroundServices";
 import { Careers } from "../routes/Careers";
 import { useEscapeKey } from "../hooks/useEscape";
+import { useMediaQuery } from "react-responsive";
 
 function App() {
   const [activeModal, setActiveModal] = useState(false);
   const location = useLocation();
+  const isMobile = useMediaQuery({ maxWidth: 767 });
 
   const handleSideBarMenu = () => {
     setActiveModal("SideBarMenu");
@@ -47,18 +49,24 @@ function App() {
         path="/"
         element={
           <div className="bg-[#f4f4f4]">
-            <div className="relative bg-Hero bg-cover bg-center h-screen">
+            <div className="relative bg-Hero md:bg-none bg-cover bg-center h-screen md:h-fit">
               <div className="absolute inset-0 flex flex-col">
                 <Navbar handleSideBarMenu={handleSideBarMenu} />
                 {activeModal === "SideBarMenu" && (
                   <MobileNavbar closeModal={closeModal} />
                 )}
-                <div className="flex-1 flex items-center justify-center">
-                  <div className="flex flex-col items-center">
-                    <Hero />
+
+                {/* Only render this Hero on mobile */}
+                {isMobile && (
+                  <div className="flex-1 flex items-center md:items-start justify-center">
+                    <div className="flex flex-col items-center">
+                      <Hero />
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
+              {/* This hero is for desktop, the two are seperate due to complexity of flexbox classes */}
+              {!isMobile && <Hero />}
             </div>
             <OurServices />
             <UndergroundServices />
