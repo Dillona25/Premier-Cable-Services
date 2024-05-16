@@ -8,10 +8,10 @@ export const ServicesCard = () => {
         src={Splicing}
         className="rounded-2xl"
       />
-      <h1 className="text-[24px] leading-[24px] text-center">
+      <h1 className="text-[18px] lg:text-[20px] leading-[24px] text-center">
         Fiberoptic Splicing
       </h1>
-      <p className="text-center mb-5">
+      <p className="text-center text-[14px] lg:text-[16px] mb-5">
         Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalaracc
         lacus vel facilisis volutpat est velitolm.
       </p>

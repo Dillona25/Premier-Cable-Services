@@ -14,11 +14,11 @@ export const UndergroundServices = () => {
           <img src={CenconLogo} alt="Cencon Logo" />
         </div>
       </div>
-      <div className="flex flex-col gap-6 px-6 bg-Cencon bg-cover bg-center py-[50px]">
-        <h1 className="text-[50px text-white text-center leading-[50px]">
+      <div className="flex flex-col gap-6 px-6 bg-Cencon md:bg-CenconDesktop bg-cover bg-center py-[50px]">
+        <h1 className="text-[50px] lg:text-[70px] text-white text-center leading-[50px] lg:leading-[75px] max-w-[500px] md:max-w-[800px] m-auto">
           In need of underground services?
         </h1>
-        <p className="text-center text-[#f4f4f4]">
+        <p className="text-center text-[#f4f4f4] lg:text-[18px] max-w-[500px] m-auto">
           We are Premier Cable Services. With a team that has over 40 years in
           the industry we are providing impactful fiberoptic, and construction
           solutions in all of the midwest

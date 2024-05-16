@@ -6,6 +6,7 @@ export default {
       backgroundImage: {
         Hero: "url('./src/images/Hero.png')",
         Cencon: "url('./src/images/Cencon.png')",
+        CenconDesktop: "url('./src/images/CenconDesktop.png')",
         Contact: "url('./src/images/ContactImage.png')",
         Menu: "url('./src/assets/Menu.svg')",
         MenuBlack: "url('./src/assets/MenuBlack.svg')",
