@@ -8,15 +8,19 @@ export const Reviews = () => {
     <section id="reviews" className="bg-white">
       <div className="flex flex-col gap-7">
         <div className="flex flex-col">
-          <h1 className="leading-[50px]">Dont just take</h1>
-          <span className="leading-[50px]">our word...</span>
-          <p className="mt-5 max-w-[330px]">
+          <h1 className="leading-[50px] md:hidden">Dont just take</h1>
+          {/* Only shown on desktop */}
+          <h1 className="hidden md:block leading-[50px] text-[60px] lg:text-[70px] text-center">
+            Who were trusted by
+          </h1>
+          <span className="leading-[50px] md:hidden">our word...</span>
+          <p className="pt-5 max-w-[330px] md:max-w-[500px] md:text-center md:m-auto lg:text-[18px] ">
             We've done work for multiple trusted telecommunications companies.
             Serving over 300,000 customers.
           </p>
         </div>
       </div>
-      <div className="flex flex-col items-center gap-12 py-[50px]">
+      <div className="flex flex-col md:flex-row md:flex-wrap md:justify-center items-center gap-12 py-[50px]">
         <ReviewsContainer
           description="Premier Cable Services LLC has been our trusted partner
            for fiber optic splicing for three years now. 

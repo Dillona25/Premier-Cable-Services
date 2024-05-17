@@ -5,7 +5,9 @@ export const Footer = () => {
   const location = useLocation();
   return (
     <footer
-      className={location.pathname === "/Careers" ? `bg-white` : `bg-[#f4f4f4]`}
+      className={
+        location.pathname === "/Careers" || "/" ? `bg-white` : `bg-[#f4f4f4]`
+      }
     >
       <div className="flex justify-between items-center border-b-[#757575] border-b-[1px] pb-5">
         <div className="flex flex-wrap justify-center gap-4">
