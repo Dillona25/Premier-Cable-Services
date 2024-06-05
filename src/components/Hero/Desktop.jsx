@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export const HeroDesktop = () => {
   return (
-    <div className="mt-[125px] mb-[50px]">
+    <div className="mt-[125px] mb-[50px] max-w-[1500px] m-auto">
       <div className="flex justify-evenly items-center gap-[75px]">
         <div className="flex flex-col justify-center max-w-[500px] xl:max-w-[650px]">
           <h1 className="text-[70px] xl:text-[90px] text-center lg:text-left ">

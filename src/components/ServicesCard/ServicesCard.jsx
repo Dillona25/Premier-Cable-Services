@@ -1,8 +1,10 @@
 import Splicing from "../../images/splicing2.png";
 
-export const ServicesCard = () => {
+export const ServicesCard = ({ className }) => {
   return (
-    <div className="flex flex-col gap-5 items-center p-3 rounded-2xl w-[380px] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
+    <div
+      className={`flex flex-col gap-5 items-center p-3 rounded-2xl w-[380px] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] ${className}`}
+    >
       <img
         alt="image of fiberoptic splicing"
         src={Splicing}
@@ -13,7 +15,9 @@ export const ServicesCard = () => {
       </h1>
       <p className="text-center text-[14px] lg:text-[16px] mb-5">
         Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalaracc
-        lacus vel facilisis volutpat est velitolm.
+        lacus vel facilisis volutpat est velitolm. Lorem ipsum dolor sit amet
+        consecte tur adipiscing elit semper dalaracc lacus vel facilisis
+        volutpat est velitolm.
       </p>
     </div>
   );

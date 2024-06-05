@@ -4,8 +4,9 @@
 
 @layer base {
   section {
-    @apply px-5;
+    @apply px-7;
     @apply py-[50px];
+    @apply md:px-10;
   }
 
   footer {
@@ -60,6 +61,10 @@
     @apply hover:ease-in-out;
     @apply hover:duration-[.5s];
   }
+
+  /* .clip-path-triangle {
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+  } */
 
   @font-face {
     font-family: "Poppins";

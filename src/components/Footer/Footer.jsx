@@ -10,7 +10,7 @@ export const Footer = () => {
       }
     >
       <div className="flex justify-between items-center border-b-[#757575] border-b-[1px] pb-5">
-        <div className="flex flex-wrap justify-center gap-4">
+        <div className="flex flex-wrap justify-center gap-4 m-auto">
           <a href="#services">Services</a>
           <a href="#reviews">Reviews</a>
           <Link to="/Contact" className="text-[#757575]">
