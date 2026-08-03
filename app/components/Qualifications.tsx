@@ -69,10 +69,19 @@ const documentation = [
   "Issue notes, Repair findings, and handoff details for follow-up work.",
 ];
 
+const certificationRecords = [
+  "ETA Fiber Splicing Specialist (FSS) Certification",
+  "BICSI Continuing Education Credits",
+  "Light Brigade Digital Credentialing",
+  "Sumitomo Digital Credentialing",
+];
+
 const bidDocuments = [
   "Certificate of insurance",
   "W-9",
   "References",
+  "Certification records",
+  "Credit-hour documentation",
   "Project availability",
   "Safety or onboarding forms",
   "Scope-specific pricing details",
@@ -135,6 +144,25 @@ export default function Qualifications() {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="py-5 border-bottom border-pcs-dark">
+          <div className="d-flex align-items-center gap-3 mb-4">
+            <span className="pcs-eyebrow-line" aria-hidden="true" />
+            <p className="text-pcs-blue fw-bold text-uppercase small mb-0">
+              Certifications & Credit Hours
+            </p>
+          </div>
+
+          <div className="row g-3 g-lg-4">
+            {certificationRecords.map((record) => (
+              <div className="col-12 col-md-6 col-xl-3" key={record}>
+                <div className="pcs-qualifications__summary h-100 p-4">
+                  <p className="h6 text-white fw-bold mb-0">{record}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="row g-4 g-lg-5 py-5 border-bottom border-pcs-dark">
