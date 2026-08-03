@@ -19,10 +19,12 @@ const trustedCompanies: Array<{
   {
     name: "Hamilton Communications",
     logo: hamiltonLogo,
+    className: "pcs-hero-trust__logo--hamilton",
   },
   {
     name: "Consolidated",
     logo: consolidatedLogo,
+    className: "pcs-hero-trust__logo--consolidated",
   },
 ];
 

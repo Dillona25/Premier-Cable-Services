@@ -137,6 +137,12 @@ export default function Contact() {
             </a>
             <a
               className="text-pcs-muted-light text-decoration-none fw-bold"
+              href="/qualifications"
+            >
+              Qualifications
+            </a>
+            <a
+              className="text-pcs-muted-light text-decoration-none fw-bold"
               href="/#contact"
             >
               Contact
