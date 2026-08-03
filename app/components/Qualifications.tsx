@@ -255,11 +255,6 @@ export default function Qualifications() {
             <h2 className="display-6 fw-black text-white lh-1 mb-4">
               Bid packet details available directly.
             </h2>
-            <p className="text-pcs-muted-light mb-0">
-              Send the project scope, required documentation, service location,
-              requested start window, and travel requirements to begin
-              qualification or onboarding.
-            </p>
           </div>
 
           <div className="col-12 col-lg-4">
