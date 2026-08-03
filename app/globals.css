@@ -187,7 +187,7 @@ a {
 
 .pcs-hero::before {
   background:
-    linear-gradient(90deg, var(--pcs-navy-deep) 0%, rgba(7, 28, 40, 0.96) 32%, rgba(7, 28, 40, 0.66) 58%, rgba(7, 28, 40, 0.4) 100%),
+    linear-gradient(90deg, var(--pcs-navy-deep) 0%, rgba(7, 28, 40, 0.98) 26%, rgba(7, 28, 40, 0.8) 48%, rgba(7, 28, 40, 0.48) 76%, rgba(7, 28, 40, 0.34) 100%),
     linear-gradient(180deg, rgba(7, 28, 40, 0.1) 0%, rgba(7, 28, 40, 0.82) 100%);
   content: "";
   inset: 0;
@@ -197,8 +197,10 @@ a {
 
 .pcs-hero__image-wrap {
   inset: 0 0 0 auto;
+  mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.08) 8%, #000 28%, #000 100%);
   position: absolute;
-  width: 68%;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.08) 8%, #000 28%, #000 100%);
+  width: 76%;
   z-index: 0;
 }
 
@@ -503,7 +505,9 @@ a {
 
   .pcs-hero__image-wrap {
     inset: 0;
+    mask-image: none;
     opacity: 0.46;
+    -webkit-mask-image: none;
     width: 100%;
   }
 
