@@ -3,8 +3,8 @@ import Contact from './components/Contact';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Services from './components/Services';
-import Testimonials from './components/Testimonials';
 import WorkBanner from './components/WorkBanner';
+// import Testimonials from './components/Testimonials';
 
 export default function App() {
   return (
@@ -13,7 +13,7 @@ export default function App() {
       <Hero />
       <Services />
       <WorkBanner />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <About />
       <Contact />
     </main>

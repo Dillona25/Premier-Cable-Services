@@ -176,6 +176,59 @@ a {
   transform: scaleX(1);
 }
 
+.pcs-navbar__resources-trigger {
+  gap: 0.35rem;
+}
+
+.pcs-navbar__resources::after {
+  content: "";
+  height: 0.65rem;
+  left: 0;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
+
+.pcs-navbar__caret {
+  border-left: 0.22rem solid transparent;
+  border-right: 0.22rem solid transparent;
+  border-top: 0.28rem solid currentColor;
+  display: inline-block;
+  margin-top: 0.12rem;
+}
+
+.pcs-navbar__resources-menu {
+  background: rgba(7, 28, 40, 0.96);
+  border: 1px solid var(--pcs-border-dark);
+  border-radius: 6px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.28);
+  min-width: 12rem;
+  opacity: 0;
+  pointer-events: none;
+  top: calc(100% + 0.5rem);
+  transform: translateY(-0.35rem);
+  transition:
+    opacity 160ms ease,
+    transform 160ms ease;
+  z-index: 20;
+}
+
+.pcs-navbar__resources-menu--open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.pcs-navbar__resources-link {
+  color: var(--pcs-muted-light);
+}
+
+.pcs-navbar__resources-link:hover,
+.pcs-navbar__resources-link:focus-visible {
+  background: rgba(31, 154, 255, 0.12);
+  color: var(--pcs-white);
+}
+
 .pcs-navbar__cta {
   min-width: 7.7rem;
 }
@@ -253,6 +306,14 @@ a {
   color: var(--pcs-white);
 }
 
+.pcs-navbar__mobile-resources {
+  border-bottom: 1px solid var(--pcs-border-dark);
+}
+
+.pcs-navbar__mobile-resources .pcs-navbar__mobile-link {
+  border-bottom: 0;
+}
+
 .pcs-navbar__mobile-cta {
   width: 100%;
 }
@@ -294,9 +355,11 @@ a {
 }
 
 .pcs-hero-trust__tile {
-  background: rgba(255, 255, 255, 0.92);
+  background: var(--pcs-white);
   border-radius: 6px;
+  flex: 0 0 9.25rem;
   min-height: 3.45rem;
+  overflow: hidden;
   width: 9.25rem;
 }
 
@@ -309,8 +372,15 @@ a {
   width: auto;
 }
 
-.pcs-hero-trust__logo--viaero {
-  max-height: 1.7rem;
+.pcs-hero-trust__logo--nct {
+  height: auto;
+  max-height: none;
+  max-width: none;
+  width: 4.55rem;
+}
+
+.pcs-hero-trust__tile--nct {
+  padding: 0.35rem 0.45rem !important;
 }
 
 .pcs-hero-trust__logo--hamilton {
@@ -456,6 +526,15 @@ a {
   background: rgba(7, 28, 40, 0.72);
 }
 
+.pcs-testimonials__cta {
+  --bs-btn-bg: rgba(31, 154, 255, 0.08);
+  --bs-btn-hover-bg: rgba(31, 154, 255, 0.16);
+}
+
+.pcs-email-fallback {
+  font-size: 0.72rem;
+}
+
 .pcs-qualifications {
   background: rgba(10, 38, 54, 0.74);
 }
@@ -492,7 +571,7 @@ a {
 }
 
 .pcs-trust-logo {
-  background: rgba(255, 255, 255, 0.92);
+  background: var(--pcs-white);
   border: 1px solid rgba(169, 187, 199, 0.16);
   border-radius: 8px;
   min-height: 8.75rem;
@@ -507,8 +586,9 @@ a {
   width: auto;
 }
 
-.pcs-trust-logo__image--viaero {
-  max-height: 2.75rem;
+.pcs-trust-logo__image--nct {
+  max-height: 6.5rem;
+  width: 11rem;
 }
 
 .pcs-about {

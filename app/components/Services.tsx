@@ -3,13 +3,14 @@ import coImage from "../assets/central-office/CO-Service.png";
 import ftthImage from "../assets/ftth/FTTH-Service.png";
 import testingImage from "../assets/otdr-testing/OTDR-Testing.png";
 import splicingImage from "../assets/splicing/Splice-Service.png";
-import undergroundImage from "../assets/underground/Underground-Service.png";
+import undergroundImage from "../assets/underground/Underground-Service-Vest.png";
 import Button from "./Button";
 
 type Service = {
   number: string;
   title: string;
   description: string;
+  detail?: string;
   image: StaticImageData;
   imageClassName?: string;
 };
@@ -19,21 +20,23 @@ const services: Service[] = [
     number: "01",
     title: "Intricate Fiber Splicing",
     description:
-      "Clean fusion splicing for new builds, repairs, cutovers, enclosures, cabinets, and service extensions.",
+      "Fiber Splicing from single drop enclosures to mass count ribbon enclosures, including SM/MM, ISP/OSP, and Aerial and Underground Plants.",
+    detail:
+      "Leveraging Sumitomo Core Alignment Fusion Splicers, Sumitomo Quantum Ribbon Splicers, AFL Fujikura R90/R100.",
     image: splicingImage,
   },
   {
     number: "02",
-    title: "OTDR Testing & Auditing",
+    title: "OTDR Testing, Fiber Characterization, Auditing and Documentation",
     description:
-      "Trace testing, documentation, and verification to confirm fiber performance before handoff.",
+      "OTDR, OLTS, and CD-PMD Testing/Characterization, Auditing, documentation, and verification available in Viavi and EXFO platforms.",
     image: testingImage,
   },
   {
     number: "03",
-    title: "Underground Repair & Maintenance",
+    title: "Underground & Aerial Fiber Infrastructure",
     description:
-      "Troubleshooting, restoration, and maintenance support for buried fiber infrastructure and field networks.",
+      "Troubleshooting, restoration, Repair and Maintenance support for Underground and Aerial Fiber Infrastructure.",
     image: undergroundImage,
     imageClassName: "pcs-services__image--underground",
   },
@@ -41,14 +44,14 @@ const services: Service[] = [
     number: "04",
     title: "FTTH & Service Drops",
     description:
-      "Fiber-to-the-home support for drops, terminations, testing, and final-mile network connections.",
+      "FTTH support for Service Drops, Terminations, Testing, and final-mile network connections.",
     image: ftthImage,
   },
   {
     number: "05",
-    title: "Central Office (CO) Work",
+    title: "Central Office Work",
     description:
-      "Fiber support for central office environments, terminations, jumpers, testing, and organized handoff work.",
+      "Fiber support for Central Office environments, Terminations, Jumpers, Testing, and organized handoff work.",
     image: coImage,
   },
 ];
@@ -71,17 +74,13 @@ export default function Services() {
               </div>
 
               <h2 className="display-6 fw-black text-white lh-1 mb-4">
-                Fiber Optic Services
+                Fiber Contracting Services
               </h2>
 
               <p className="lead text-pcs-muted-light mb-4">
-                Owner-operated support for splicing, testing, repair, FTTH, and
-                central office fiber work.
-              </p>
-
-              <p className="text-pcs-muted-light mb-0">
-                From new network builds to field restoration, PCS keeps the
-                scope direct, organized, and ready for dependable handoff.
+                We specialize in Fiber Splicing, Fiber Testing, Repair and
+                Maintenance, FTTH, Underground and Aerial Fiber Infrastructure,
+                and Central Office Fiber Work.
               </p>
 
               <Button className="mt-4 px-4 py-3" href="#contact">
@@ -123,6 +122,11 @@ export default function Services() {
                         <p className="text-pcs-muted-light small mb-0">
                           {service.description}
                         </p>
+                        {service.detail ? (
+                          <p className="text-pcs-muted-light small mb-0 mt-2">
+                            {service.detail}
+                          </p>
+                        ) : null}
                       </div>
                     </div>
                   </div>

@@ -6,7 +6,7 @@ import Work from '../components/Work';
 export const metadata: Metadata = {
   title: 'Our Work',
   description:
-    'Field work photos from Premier Cable Services, including fiber splicing and central office support.',
+    'A look at our Field Work, including Fiber Splicing, Underground and Aerial Fiber Infrastructure, and Central Office support.',
 };
 
 export default function WorkPage() {

@@ -6,7 +6,7 @@ import Qualifications from "../components/Qualifications";
 export const metadata: Metadata = {
   title: "Qualifications",
   description:
-    "Bid-ready qualifications for Premier Cable Services, including fiber capabilities, documentation support, and contractor onboarding details.",
+    "Bid-ready qualifications for Premier Cable Services, including Fiber Splicing, Ribbon Splicing, Fiber Testing, Validation, Characterization, Underground and Aerial Fiber Infrastructure, documentation support, and contractor onboarding details.",
 };
 
 export default function QualificationsPage() {

@@ -45,8 +45,13 @@ export default function Button({
     .join(' ');
 
   if ('href' in props && props.href) {
+    const anchorProps =
+      props.href.startsWith('mailto:') && props.target === undefined
+        ? { ...props, rel: props.rel ?? 'noreferrer', target: '_blank' }
+        : props;
+
     return (
-      <a className={classes} {...props}>
+      <a className={classes} {...anchorProps}>
         {children}
       </a>
     );

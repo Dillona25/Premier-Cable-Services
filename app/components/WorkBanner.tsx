@@ -1,4 +1,4 @@
-import Button from './Button';
+import Button from "./Button";
 
 export default function WorkBanner() {
   return (
@@ -10,11 +10,15 @@ export default function WorkBanner() {
               Our Work
             </p>
             <h2 className="h3 fw-black text-white mb-0">
-              See real splice cases, field setups, and central office work.
+              See images of our Splice Cases, Central Office Work, and more.
             </h2>
           </div>
 
-          <Button className="pcs-work-banner__cta px-4 py-3" href="/work" variant="secondary">
+          <Button
+            className="pcs-work-banner__cta px-4 py-3"
+            href="/work"
+            variant="secondary"
+          >
             View Our Work
           </Button>
         </div>

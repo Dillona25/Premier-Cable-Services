@@ -29,62 +29,62 @@ const workItems: WorkItem[] = [
   {
     category: 'Splicing',
     title: 'Splice Case Prep',
-    description: 'Clean field setup and splice case work for organized fiber builds.',
+    description: 'We keep field setup and Splice Case work clean for organized Fiber Builds.',
     image: splicingOne,
   },
   {
     category: 'Splicing',
     title: 'Fiber Tray Organization',
-    description: 'Detailed fiber routing, tray organization, and splice protection.',
+    description: 'We focus on detailed Fiber Routing, tray organization, and Splice Protection.',
     image: splicingTwo,
   },
   {
     category: 'Splicing',
     title: 'Fusion Splicing',
-    description: 'Hands-on fusion splicing for repairs, cutovers, and service extensions.',
+    description: 'We handle hands-on Fusion Splicing for Repairs, Cutovers, and Service Extensions.',
     image: splicingThree,
   },
   {
     category: 'Splicing',
     title: 'Splice Enclosure Detail',
-    description: 'Finished enclosure work with attention to routing, labeling, and cleanup.',
+    description: 'We finish enclosure work with attention to Routing, Labeling, and cleanup.',
     image: splicingFour,
     imageClassName: 'pcs-work__image--splice-detail',
   },
   {
     category: 'Splicing',
     title: 'Splice Case Detail',
-    description: 'Close-up fiber work showing tray layout, routing, and splice protection.',
+    description: 'Our close-up Fiber Work shows tray layout, Routing, and Splice Protection.',
     image: splicingSix,
   },
   {
     category: 'Splicing',
     title: 'Field Splicing Setup',
-    description: 'Organized splicing setup for clean, dependable field execution.',
+    description: 'We organize Splicing Setup for clean, dependable Field Execution.',
     image: splicingSeven,
   },
   {
     category: 'Central Office',
     title: 'Central Office Rack Work',
-    description: 'Organized central office fiber routing, jumpers, and terminations.',
+    description: 'We organize Central Office Fiber Routing, Jumpers, and Terminations.',
     image: coTwo,
   },
   {
     category: 'Central Office',
     title: 'CO Fiber Management',
-    description: 'Fiber management and patching support for central office environments.',
+    description: 'We support Fiber Management and patching in Central Office environments.',
     image: coThree,
   },
   {
     category: 'Central Office',
     title: 'Termination Support',
-    description: 'Central office termination work with clear routing and dependable handoff.',
+    description: 'We complete Central Office Termination work with clear Routing and dependable handoff.',
     image: coFour,
   },
   {
     category: 'Central Office',
     title: 'CO Testing & Handoff',
-    description: 'Testing, verification, and closeout support for central office fiber scopes.',
+    description: 'We provide Testing, verification, and closeout support for Central Office Fiber Scopes.',
     image: coFive,
   },
 ];
@@ -108,11 +108,12 @@ export default function Work() {
             </div>
 
             <h2 className="display-6 fw-black text-white lh-1 mb-3">
-              Project photos that show the field work clearly.
+              A closer look at our field work.
             </h2>
             <p className="lead text-pcs-muted-light mb-0">
-              A place to highlight splice cases, testing, repairs, service
-              drops, and central office fiber work.
+              We use this gallery to show Splice Cases, Testing, Repairs,
+              Service Drops, Underground and Aerial Fiber Infrastructure, and
+              Central Office Fiber Work.
             </p>
           </div>
 

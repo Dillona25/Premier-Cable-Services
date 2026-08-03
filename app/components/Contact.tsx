@@ -28,7 +28,11 @@ export default function Contact() {
   } as CSSProperties & { "--pcs-contact-bg": string };
 
   return (
-    <section className="pcs-contact py-5" id="contact" style={contactBackgroundStyle}>
+    <section
+      className="pcs-contact py-5"
+      id="contact"
+      style={contactBackgroundStyle}
+    >
       <div className="container-xl pcs-contact__content py-4 py-lg-5">
         <div className="row g-4 g-lg-5 align-items-end border-bottom border-pcs-dark pb-5 mb-5">
           <div className="col-12 col-lg-8">
@@ -40,12 +44,11 @@ export default function Contact() {
             </div>
 
             <h2 className="display-5 fw-black text-white lh-1 mb-4">
-              Ready to talk through a fiber job?
+              Ready To Talk Through a Fiber Job?
             </h2>
             <p className="lead text-pcs-muted-light mb-0">
-              Reach out directly for fiber splicing, testing, repair,
-              maintenance, FTTH, or CO support. No forms, no handoff queue, just
-              a clear way to start the conversation.
+              Reach out to us directly. No forms. No queue. Just a clear way to
+              immediately start the conversation.
             </p>
           </div>
 
@@ -53,6 +56,8 @@ export default function Contact() {
             <a
               className="btn pcs-button pcs-button--primary pcs-contact__cta px-4 py-3 fw-bold"
               href="mailto:billarnold@premiercableservices.com"
+              rel="noreferrer"
+              target="_blank"
             >
               Email Us
             </a>
@@ -65,8 +70,16 @@ export default function Contact() {
               <a
                 className="pcs-contact__method d-flex flex-column justify-content-between h-100 p-3 p-lg-4 text-decoration-none"
                 href={method.href}
-                rel={method.label === "LinkedIn" ? "noreferrer" : undefined}
-                target={method.label === "LinkedIn" ? "_blank" : undefined}
+                rel={
+                  method.label === "LinkedIn" || method.label === "Email"
+                    ? "noreferrer"
+                    : undefined
+                }
+                target={
+                  method.label === "LinkedIn" || method.label === "Email"
+                    ? "_blank"
+                    : undefined
+                }
               >
                 <span className="d-flex align-items-center justify-content-between gap-3 mb-3">
                   <span className="text-pcs-blue small fw-bold text-uppercase">
@@ -103,7 +116,7 @@ export default function Contact() {
               className="pcs-footer__logo d-block mb-3"
             />
             <p className="text-pcs-muted-light mb-0">
-              Copyright @premiercableservices {currentYear}
+              &copy;PremierCableServices {currentYear}
             </p>
           </div>
 
@@ -123,12 +136,12 @@ export default function Contact() {
             >
               Our Work
             </a>
-            <a
+            {/* <a
               className="text-pcs-muted-light text-decoration-none fw-bold"
               href="/#testimonials"
             >
               Trusted By
-            </a>
+            </a> */}
             <a
               className="text-pcs-muted-light text-decoration-none fw-bold"
               href="/#about"

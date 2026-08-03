@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: "%s | PCS",
   },
   description:
-    "Premier Cable Services provides fiber splicing, OTDR testing, fiber auditing, and FTTH support.",
+    "Premier Cable Services provides Fiber Splicing, Fiber Testing, Fiber Auditing, FTTH Support, and Underground and Aerial Fiber Infrastructure support.",
   applicationName: "Premier Cable Services",
   icons: {
     icon: "/favicon.png",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "PCS | Premier Cable Services",
     description:
-      "Fiber splicing, OTDR testing, fiber auditing, and FTTH support from Premier Cable Services.",
+      "Fiber Splicing, Fiber Testing, Fiber Auditing, FTTH Support, and Underground and Aerial Fiber Infrastructure support from Premier Cable Services.",
     siteName: "Premier Cable Services",
     type: "website",
   },

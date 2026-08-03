@@ -8,15 +8,19 @@ import Button from "./Button";
 const navItems = [
   { label: "Services", href: "/#services" },
   { label: "Our Work", href: "/work" },
-  { label: "Trusted By", href: "/#testimonials" },
+  // { label: "Trusted By", href: "/#testimonials" },
   { label: "About", href: "/#about" },
 ];
 
+const resourceItems = [{ label: "Qualifications", href: "/qualifications" }];
+
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isResourcesOpen, setIsResourcesOpen] = useState(false);
 
   const closeMenu = () => {
     setIsMenuOpen(false);
+    setIsResourcesOpen(false);
   };
 
   return (
@@ -50,6 +54,41 @@ export default function Navbar() {
               {item.label}
             </Button>
           ))}
+
+          <div
+            className="pcs-navbar__resources position-relative"
+            onMouseEnter={() => setIsResourcesOpen(true)}
+            onMouseLeave={() => setIsResourcesOpen(false)}
+          >
+            <Button
+              aria-expanded={isResourcesOpen}
+              aria-haspopup="true"
+              className="pcs-navbar__link pcs-navbar__resources-trigger p-0"
+              onClick={() => setIsResourcesOpen((current) => !current)}
+              type="button"
+              variant="text"
+            >
+              Resources
+              <span aria-hidden="true" className="pcs-navbar__caret" />
+            </Button>
+
+            <div
+              className={`pcs-navbar__resources-menu position-absolute start-0 p-1 ${
+                isResourcesOpen ? "pcs-navbar__resources-menu--open" : ""
+              }`}
+            >
+              {resourceItems.map((item) => (
+                <a
+                  className="pcs-navbar__resources-link d-block rounded-1 px-2 py-1 text-decoration-none fw-bold small"
+                  href={item.href}
+                  key={item.href}
+                  onClick={closeMenu}
+                >
+                  {item.label}
+                </a>
+              ))}
+            </div>
+          </div>
         </div>
 
         <Button
@@ -94,6 +133,22 @@ export default function Navbar() {
                 {item.label}
               </a>
             ))}
+
+            <div className="pcs-navbar__mobile-resources py-3">
+              <p className="small text-uppercase text-pcs-blue fw-bold mb-2">
+                Resources
+              </p>
+              {resourceItems.map((item) => (
+                <a
+                  className="pcs-navbar__mobile-link d-block py-2 text-decoration-none fw-bold"
+                  href={item.href}
+                  key={item.href}
+                  onClick={closeMenu}
+                >
+                  {item.label}
+                </a>
+              ))}
+            </div>
 
             <Button
               className="pcs-navbar__mobile-cta mt-3 px-4 py-3"

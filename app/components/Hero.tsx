@@ -1,32 +1,36 @@
 import Image from "next/image";
-import type { StaticImageData } from "next/image";
-import consolidatedLogo from "../assets/Consolidated-Logo.png";
-import hamiltonLogo from "../assets/Hamilton Communications.png";
 import heroImage from "../assets/man-splicing.jpeg";
-import viaeroLogo from "../assets/Viaero.png";
 import Button from "./Button";
 
-const trustedCompanies: Array<{
-  name: string;
-  logo: StaticImageData;
-  className?: string;
-}> = [
-  {
-    name: "Viaero",
-    logo: viaeroLogo,
-    className: "pcs-hero-trust__logo--viaero",
-  },
-  {
-    name: "Hamilton Communications",
-    logo: hamiltonLogo,
-    className: "pcs-hero-trust__logo--hamilton",
-  },
-  {
-    name: "Consolidated",
-    logo: consolidatedLogo,
-    className: "pcs-hero-trust__logo--consolidated",
-  },
-];
+// Trusted company strip removed from render for NDA reasons.
+// import type { StaticImageData } from "next/image";
+// import consolidatedLogo from "../assets/Consolidated-Logo.png";
+// import hamiltonLogo from "../assets/Hamilton Communications.png";
+// import nctHeroLogo from "../assets/NCT-Logo-Hero.png";
+//
+// const trustedCompanies: Array<{
+//   name: string;
+//   logo: StaticImageData;
+//   className?: string;
+//   tileClassName?: string;
+// }> = [
+//   {
+//     name: "NCT",
+//     logo: nctHeroLogo,
+//     className: "pcs-hero-trust__logo--nct",
+//     tileClassName: "pcs-hero-trust__tile--nct",
+//   },
+//   {
+//     name: "Hamilton Communications",
+//     logo: hamiltonLogo,
+//     className: "pcs-hero-trust__logo--hamilton",
+//   },
+//   {
+//     name: "Consolidated",
+//     logo: consolidatedLogo,
+//     className: "pcs-hero-trust__logo--consolidated",
+//   },
+// ];
 
 export default function Hero() {
   return (
@@ -58,10 +62,11 @@ export default function Hero() {
             </h1>
 
             <p className="lead text-pcs-muted-light mb-4 pe-lg-4">
-              Premier Cable Services provides owner-operated fiber splicing,
-              OTDR testing, auditing, FTTH support, and repair and maintenance
-              for fiber infrastructure. We strive to ensure every job is
-              completed to a high standard with clean workmanship.
+              Premier Cable Services provides Fiber Splicing, Fiber Testing,
+              Fiber Auditing, FTTH Support, Repair and Maintenance, and
+              Underground and Aerial Fiber Infrastructure contracting services.
+              Our owner stays involved, and our technicians take pride in
+              completing every job to a high standard with clean workmanship.
             </p>
 
             <div className="d-flex flex-wrap align-items-center gap-3 mb-5">
@@ -77,14 +82,16 @@ export default function Hero() {
               </Button>
             </div>
 
-            <div className="pcs-hero-trust">
+            {/* <div className="pcs-hero-trust">
               <p className="text-pcs-muted-light small fw-bold text-uppercase mb-3">
                 Trusted by
               </p>
               <div className="d-flex flex-wrap align-items-center gap-2 gap-sm-3">
                 {trustedCompanies.map((company) => (
                   <div
-                    className="pcs-hero-trust__tile d-flex align-items-center justify-content-center px-3 py-2"
+                    className={`pcs-hero-trust__tile d-flex align-items-center justify-content-center px-3 py-2 ${
+                      company.tileClassName ?? ""
+                    }`}
                     key={company.name}
                   >
                     <Image
@@ -98,7 +105,7 @@ export default function Hero() {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

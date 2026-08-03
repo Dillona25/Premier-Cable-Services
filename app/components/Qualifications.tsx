@@ -6,8 +6,8 @@ const summaryItems = [
     value: "Premier Cable Services LLC",
   },
   {
-    label: "Company type",
-    value: "Owner-operated fiber contractor",
+    label: "Company Type",
+    value: "Sole Owner/Single-Member LLC",
   },
   {
     label: "Founded",
@@ -15,7 +15,7 @@ const summaryItems = [
   },
   {
     label: "Experience",
-    value: "20+ years in fiber work",
+    value: "20+ years in Fiber work",
   },
   {
     label: "Service area",
@@ -28,25 +28,45 @@ const summaryItems = [
 ];
 
 const capabilities = [
-  "Fusion splicing for new builds, repairs, cutovers, enclosures, cabinets, and service extensions.",
-  "OTDR testing, auditing, trace documentation, and verification before handoff.",
-  "Underground fiber repair and maintenance support for buried infrastructure.",
-  "Fiber-to-the-home support for drops, terminations, testing, and final-mile work.",
-  "Central office fiber work, jumper organization, terminations, testing, and handoff support.",
+  "Fiber Splicing for single drop enclosures, mass count ribbon enclosures, SM/MM, ISP/OSP, and Aerial and Underground Plants.",
+  "20+ years in Fiber work, including Large-Scale Fiber Splicing, Plant Construction, Testing/Validation/Documentation Projects, and Troubleshooting/Repair in ISP and OSP applications.",
+  "Fiber Testing, Validation, Characterization, Auditing, and Supporting Documentation.",
+  "Underground and Aerial Fiber Infrastructure Repair and Maintenance support.",
+  "FTTH support for Service Drops, Terminations, Testing, and final-mile work.",
+  "Central Office Fiber Work, Jumper Organization, Terminations, Testing, and handoff support.",
+];
+
+const equipmentGroups = [
+  {
+    label: "Fiber Splicing",
+    items: [
+      "Sumitomo Core Alignment Fusion Splicers",
+      "Sumitomo Quantum Ribbon Splicers",
+      "AFL Fujikura R90/R100",
+    ],
+  },
+  {
+    label: "Testing Platforms",
+    items: [
+      "Viavi OTDR, OLTS, and CD-PMD Testing/Characterization",
+      "EXFO OTDR, OLTS, and CD-PMD Testing/Characterization",
+    ],
+  },
 ];
 
 const standards = [
   "Clean routing, labeling, and splice protection practices.",
   "Organized work areas and clear closeout expectations.",
-  "Direct owner communication from project coordination through final test.",
+  "Owner involvement from project coordination through final test.",
+  "Skilled technicians who take pride in the work from start to finish.",
   "Respect for active infrastructure, customer property, and jobsite requirements.",
 ];
 
 const documentation = [
-  "OTDR traces and test results when required by project scope.",
-  "Closeout photos for splice cases, cabinets, CO work, or field conditions.",
+  "OTDR uni- or bi-directional traces, OLTS, multiple wavelengths, and CD-PMD with customer preference of Viavi or EXFO platforms.",
+  "Closeout photos for Splice Cases, cabinets, CO Work, or field conditions.",
   "Fiber route, tray, jumper, and termination documentation when requested.",
-  "Issue notes, repair findings, and handoff details for follow-up work.",
+  "Issue notes, Repair findings, and handoff details for follow-up work.",
 ];
 
 const bidDocuments = [
@@ -59,10 +79,10 @@ const bidDocuments = [
 ];
 
 const workEnvironments = [
-  "Outside plant and field fiber environments",
-  "Splice cases, cabinets, handholes, and service drops",
-  "Underground repair and maintenance scopes",
-  "Central office fiber rooms, racks, jumpers, and terminations",
+  "Outside Plant and Field Fiber environments",
+  "Splice Cases, cabinets, handholes, and Service Drops",
+  "Underground and Aerial Plant Repair and Maintenance scopes",
+  "Central Office Fiber rooms, racks, Jumpers, and Terminations",
   "Contractor, ISP, utility, builder, and network operator projects",
 ];
 
@@ -83,9 +103,9 @@ export default function Qualifications() {
               Bid-ready fiber contractor qualifications.
             </h1>
             <p className="lead text-pcs-muted-light mb-0">
-              A quick reference for project owners, telecom teams, contractors,
-              and procurement contacts reviewing Premier Cable Services LLC for
-              nationwide field fiber work.
+              Use this page to review our bid-ready details for nationwide
+              field fiber work, contractor onboarding, and procurement
+              qualification.
             </p>
           </div>
 
@@ -93,9 +113,14 @@ export default function Qualifications() {
             <Button
               className="pcs-qualifications__cta px-4 py-3"
               href="mailto:billarnold@premiercableservices.com?subject=Premier%20Cable%20Services%20Bid%20Qualifications"
+              rel="noreferrer"
+              target="_blank"
             >
               Request Bid Docs
             </Button>
+            <p className="pcs-email-fallback d-none d-lg-block text-pcs-muted-light mb-0 mt-2">
+              Or email billarnold@premiercableservices.com
+            </p>
           </div>
         </div>
 
@@ -118,8 +143,8 @@ export default function Qualifications() {
               Core capabilities.
             </h2>
             <p className="text-pcs-muted-light mb-0">
-              PCS supports the practical field work and closeout details that
-              keep nationwide fiber scopes moving from installation to verified
+              We support the practical field work and closeout details that keep
+              nationwide fiber scopes moving from installation to verified
               handoff.
             </p>
           </div>
@@ -135,6 +160,47 @@ export default function Qualifications() {
                     {String(index + 1).padStart(2, "0")}
                   </span>
                   <p className="text-pcs-muted-light mb-0">{capability}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="row g-4 g-lg-5 py-5 border-bottom border-pcs-dark">
+          <div className="col-12 col-lg-5">
+            <p className="text-pcs-blue small fw-bold text-uppercase mb-3">
+              Equipment & Platforms
+            </p>
+            <h2 className="display-6 fw-black text-white lh-1 mb-4">
+              Built around professional splicing and testing tools.
+            </h2>
+            <p className="text-pcs-muted-light mb-0">
+              We bring professional splicing equipment and testing platforms to
+              Single Fiber Splicing, Ribbon Splicing, OTDR, OLTS, and CD-PMD
+              scopes.
+            </p>
+          </div>
+
+          <div className="col-12 col-lg-7">
+            <div className="row g-3">
+              {equipmentGroups.map((group) => (
+                <div className="col-12 col-md-6" key={group.label}>
+                  <div className="pcs-qualifications__panel h-100 p-4">
+                    <p className="text-pcs-blue small fw-bold text-uppercase mb-3">
+                      {group.label}
+                    </p>
+                    <ul className="pcs-qualifications__bullets text-pcs-muted-light mb-0 ps-0">
+                      {group.items.map((item) => (
+                        <li className="d-flex gap-3 mb-3" key={item}>
+                          <span
+                            aria-hidden="true"
+                            className="pcs-qualifications__dot mt-2"
+                          />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               ))}
             </div>
