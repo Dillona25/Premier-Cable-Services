@@ -30,7 +30,7 @@ export default function Contact() {
   return (
     <section className="pcs-contact py-5" id="contact" style={contactBackgroundStyle}>
       <div className="container-xl pcs-contact__content py-4 py-lg-5">
-        <div className="row g-5 align-items-end border-bottom border-pcs-dark pb-5 mb-5">
+        <div className="row g-4 g-lg-5 align-items-end border-bottom border-pcs-dark pb-5 mb-5">
           <div className="col-12 col-lg-8">
             <div className="d-flex align-items-center gap-3 mb-4">
               <span className="pcs-eyebrow-line" aria-hidden="true" />
@@ -51,7 +51,7 @@ export default function Contact() {
 
           <div className="col-12 col-lg-4">
             <a
-              className="btn pcs-button pcs-button--primary w-100 px-4 py-3 fw-bold"
+              className="btn pcs-button pcs-button--primary pcs-contact__cta px-4 py-3 fw-bold"
               href="mailto:billarnold@premiercableservices.com"
             >
               Email Us
@@ -83,7 +83,13 @@ export default function Contact() {
                     </span>
                   ) : null}
                 </span>
-                <span className="pcs-contact__value">{method.value}</span>
+                <span
+                  className={`pcs-contact__value ${
+                    method.label === "Email" ? "pcs-contact__value--email" : ""
+                  }`}
+                >
+                  {method.value}
+                </span>
               </a>
             </div>
           ))}
@@ -107,31 +113,31 @@ export default function Contact() {
           >
             <a
               className="text-pcs-muted-light text-decoration-none fw-bold"
-              href="#services"
+              href="/#services"
             >
               Services
             </a>
             <a
               className="text-pcs-muted-light text-decoration-none fw-bold"
-              href="#work"
+              href="/work"
             >
-              Work
+              Our Work
             </a>
             <a
               className="text-pcs-muted-light text-decoration-none fw-bold"
-              href="#testimonials"
+              href="/#testimonials"
             >
-              Testimonials
+              Trusted By
             </a>
             <a
               className="text-pcs-muted-light text-decoration-none fw-bold"
-              href="#about"
+              href="/#about"
             >
               About
             </a>
             <a
               className="text-pcs-muted-light text-decoration-none fw-bold"
-              href="#contact"
+              href="/#contact"
             >
               Contact
             </a>

@@ -4,7 +4,7 @@ import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Services from './components/Services';
 import Testimonials from './components/Testimonials';
-import Work from './components/Work';
+import WorkBanner from './components/WorkBanner';
 
 export default function App() {
   return (
@@ -12,7 +12,7 @@ export default function App() {
       <Navbar />
       <Hero />
       <Services />
-      <Work />
+      <WorkBanner />
       <Testimonials />
       <About />
       <Contact />

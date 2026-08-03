@@ -1,12 +1,29 @@
 import Image from "next/image";
+import type { StaticImageData } from "next/image";
+import consolidatedLogo from "../assets/Consolidated-Logo.png";
+import hamiltonLogo from "../assets/Hamilton Communications.png";
 import heroImage from "../assets/man-splicing.jpeg";
+import viaeroLogo from "../assets/Viaero.png";
 import Button from "./Button";
 
-const serviceHighlights = [
-  "Fiber splicing",
-  "OTDR testing",
-  "Underground repair",
-  "FTTH support",
+const trustedCompanies: Array<{
+  name: string;
+  logo: StaticImageData;
+  className?: string;
+}> = [
+  {
+    name: "Viaero",
+    logo: viaeroLogo,
+    className: "pcs-hero-trust__logo--viaero",
+  },
+  {
+    name: "Hamilton Communications",
+    logo: hamiltonLogo,
+  },
+  {
+    name: "Consolidated",
+    logo: consolidatedLogo,
+  },
 ];
 
 export default function Hero() {
@@ -33,7 +50,7 @@ export default function Hero() {
               </p>
             </div>
 
-            <h1 className="display-4 fw-black text-white lh-1 mb-4">
+            <h1 className="pcs-hero__heading display-4 fw-black text-white lh-1 mb-4">
               Expanding Broadband &
               <span className="d-block">Connecting Communities.</span>
             </h1>
@@ -58,15 +75,27 @@ export default function Hero() {
               </Button>
             </div>
 
-            <div className="d-flex flex-wrap gap-3">
-              {serviceHighlights.map((service) => (
-                <span
-                  className="pcs-hero__service px-3 py-2 small fw-bold"
-                  key={service}
-                >
-                  {service}
-                </span>
-              ))}
+            <div className="pcs-hero-trust">
+              <p className="text-pcs-muted-light small fw-bold text-uppercase mb-3">
+                Trusted by
+              </p>
+              <div className="d-flex flex-wrap align-items-center gap-2 gap-sm-3">
+                {trustedCompanies.map((company) => (
+                  <div
+                    className="pcs-hero-trust__tile d-flex align-items-center justify-content-center px-3 py-2"
+                    key={company.name}
+                  >
+                    <Image
+                      src={company.logo}
+                      alt={`${company.name} logo`}
+                      className={`pcs-hero-trust__logo ${
+                        company.className ?? ""
+                      }`}
+                      sizes="9rem"
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

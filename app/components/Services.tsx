@@ -60,7 +60,7 @@ export default function Services() {
       id="services"
     >
       <div className="container-xl py-4 py-lg-5">
-        <div className="row g-5 align-items-start">
+        <div className="row g-4 g-lg-5 align-items-start">
           <div className="col-12 col-lg-5">
             <div className="position-sticky top-0 pt-lg-4">
               <div className="d-flex align-items-center gap-3 mb-4">
@@ -97,7 +97,7 @@ export default function Services() {
                   className="row g-3 align-items-center py-3 border-bottom border-pcs-dark"
                   key={service.number}
                 >
-                  <div className="col-4 col-md-3">
+                  <div className="col-12 col-md-3">
                     <div className="pcs-image-placeholder ratio ratio-16x9 overflow-hidden">
                       <Image
                         src={service.image}
@@ -106,12 +106,12 @@ export default function Services() {
                           service.imageClassName ?? ""
                         }`}
                         fill
-                        sizes="(min-width: 992px) 14vw, 30vw"
+                        sizes="(min-width: 992px) 14vw, (min-width: 768px) 30vw, 100vw"
                       />
                     </div>
                   </div>
 
-                  <div className="col-8 col-md-9">
+                  <div className="col-12 col-md-9">
                     <div className="d-flex align-items-start gap-3">
                       <span className="text-pcs-blue fw-bold small pt-1">
                         {service.number}

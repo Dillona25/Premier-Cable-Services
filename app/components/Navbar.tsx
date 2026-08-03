@@ -3,10 +3,10 @@ import logo from "../assets/PCS-Transparent-Logo.png";
 import Button from "./Button";
 
 const navItems = [
-  { label: "Services", href: "#services" },
-  { label: "Work", href: "#work" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "About", href: "#about" },
+  { label: "Services", href: "/#services" },
+  { label: "Our Work", href: "/work" },
+  { label: "Trusted By", href: "/#testimonials" },
+  { label: "About", href: "/#about" },
 ];
 
 export default function Navbar() {
@@ -18,7 +18,7 @@ export default function Navbar() {
       >
         <a
           className="navbar-brand d-inline-flex align-items-center flex-shrink-0 m-0 p-0 me-md-5 pe-lg-4"
-          href="#top"
+          href="/#top"
           aria-label="Premier Cable Services home"
         >
           <Image
@@ -44,7 +44,7 @@ export default function Navbar() {
 
         <Button
           className="pcs-navbar__cta flex-shrink-0 px-3 py-2"
-          href="#contact"
+          href="/#contact"
           variant="primary"
         >
           Get In Touch

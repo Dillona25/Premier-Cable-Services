@@ -18,7 +18,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="row g-5 justify-content-center align-items-start">
+        <div className="row g-4 g-lg-5 justify-content-center align-items-start">
           <div className="col-12 col-lg-7">
             <div className="pcs-about__story border-top border-pcs-dark pt-4">
               <p className="lead text-pcs-muted-light mb-4">
