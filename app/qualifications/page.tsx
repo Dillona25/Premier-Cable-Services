@@ -4,9 +4,9 @@ import Navbar from "../components/Navbar";
 import Qualifications from "../components/Qualifications";
 
 export const metadata: Metadata = {
-  title: "Qualifications",
+  title: "Why us? View Oue Qualifications | Premier Cable Services",
   description:
-    "Bid-ready qualifications for Premier Cable Services, including Fiber Splicing, Ribbon Splicing, Fiber Testing, Validation, Characterization, certification records, credit-hour documentation, and contractor onboarding details.",
+    "Review Premier Cable Service's qualifications, experience, certifications, equipment, and documentation support for bid-ready Fiber Optic Contract Services.",
 };
 
 export default function QualificationsPage() {

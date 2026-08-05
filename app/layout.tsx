@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     apple: "/favicon.png",
   },
   openGraph: {
-    title: "PCS | Premier Cable Services",
+    title: "Premier Cable Services | Fiber Optic Splicing Contractor",
     description:
-      "Fiber Splicing, Fiber Testing, Fiber Auditing, FTTH Support, and Underground and Aerial Fiber Infrastructure support from Premier Cable Services.",
+      "Premier Cable Services provides Fiber Optic Services including fiber Splicing, Testing, Repair and Maintenance, and FTTH support with clean, reliable workmanship.",
     siteName: "Premier Cable Services",
     type: "website",
   },
